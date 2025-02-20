@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+PRODID:-//zoom.us//iCalendar Event//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+CLASS:PUBLIC
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+LAST-MODIFIED:20250121T082933Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZNAME:IST
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20250220T113009Z
+DTSTART;TZID=Asia/Kolkata:20250224T170000
+DTEND;TZID=Asia/Kolkata:20250224T190000
+SUMMARY:AICTE internship on AI : Project 1: AI-powered Resume Screening a
+ nd Ranking System
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250303T133000Z;INTERVAL=1;BYDAY=MO
+UID:ZOOM97874394325@zoom.us
+TZID:Asia/Kolkata
+DESCRIPTION:Topic: AICTE internship on AI : Project 1: AI-powered Resume 
+ Screening and Ranking System\nDescription: In the modern recruitment pro
+ cess\, organizations receive an overwhelming number of resumes for each 
+ job opening. Screening these resumes to identify the most suitable candi
+ dates is a time-consuming and labor-intensive task. Automating this proc
+ ess using machine learning and natural language processing (NLP) techniq
+ ues can significantly improve the efficiency and effectiveness of recrui
+ tment.\n\nJoin from PC\, Mac\, iPad\, or Android:\nhttps://zoom.us/j/978
+ 74394325\n\n
+LOCATION:https://zoom.us/j/97874394325
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
