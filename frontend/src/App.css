@@ -1,42 +1,71 @@
-#root {
-  max-width: 1280px;
+/* General Container */
+.app-container {
+  max-width: 960px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header */
+.app-header {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app-header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #007bff;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Main Content */
+.app-main {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Results Section */
+.results-section {
+  margin-top: 30px;
 }
 
-.card {
-  padding: 2em;
+.results-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #555;
 }
 
-.read-the-docs {
-  color: #888;
+/* Results List */
+.results-list {
+  list-style: none;
+  padding: 0;
+}
+
+.result-item {
+  background: #e9ecef;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.result-item h3 {
+  margin: 0;
+  color: #007bff;
+}
+
+.result-item p {
+  margin: 5px 0;
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 0.9em;
+  color: #777;
 }

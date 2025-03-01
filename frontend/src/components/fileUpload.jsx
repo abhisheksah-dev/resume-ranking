@@ -1,17 +1,19 @@
 import React, { useState } from "react";
+import "./FileUpload.css"; // Import the CSS file for styling
 
 const FileUpload = ({ onUploadComplete }) => {
   const [files, setFiles] = useState([]);
 
   const handleFileChange = (e) => {
-    setFiles(e.target.files);
+    // Convert the FileList to an array and update state
+    setFiles(Array.from(e.target.files));
   };
 
   const handleUpload = async () => {
     const formData = new FormData();
-    for (let i = 0; i < files.length; i++) {
-      formData.append("files", files[i]);
-    }
+    files.forEach((file) => {
+      formData.append("files", file);
+    });
 
     try {
       const response = await fetch("http://127.0.0.1:5000/upload", {
@@ -27,9 +29,19 @@ const FileUpload = ({ onUploadComplete }) => {
   };
 
   return (
-    <div>
-      <input type="file" multiple onChange={handleFileChange} />
-      <button onClick={handleUpload}>Upload and Evaluate</button>
+    <div className="upload-container">
+      <h2>Upload Your Resumes</h2>
+      <div className="file-input-wrapper">
+        <input
+          type="file"
+          multiple
+          onChange={handleFileChange}
+          className="file-input"
+        />
+      </div>
+      <button onClick={handleUpload} className="upload-button">
+        Upload and Evaluate
+      </button>
     </div>
   );
 };
